@@ -39,9 +39,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/HouzuoGuo/tiedot/db"
-	"github.com/HouzuoGuo/tiedot/tdlog"
 	jwt "github.com/dgrijalva/jwt-go"
+	"github.com/marbemac/tiedot/db"
+	"github.com/marbemac/tiedot/tdlog"
 )
 
 var (

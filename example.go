@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/HouzuoGuo/tiedot/db"
-	"github.com/HouzuoGuo/tiedot/dberr"
+	"github.com/marbemac/tiedot/db"
+	"github.com/marbemac/tiedot/dberr"
 )
 
 /*

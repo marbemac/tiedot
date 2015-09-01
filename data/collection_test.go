@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/HouzuoGuo/tiedot/dberr"
+	"github.com/marbemac/tiedot/dberr"
 )
 
 func TestInsertRead(t *testing.T) {

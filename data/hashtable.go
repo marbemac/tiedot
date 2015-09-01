@@ -9,8 +9,9 @@ package data
 
 import (
 	"encoding/binary"
-	"github.com/HouzuoGuo/tiedot/tdlog"
 	"sync"
+
+	"github.com/marbemac/tiedot/tdlog"
 )
 
 const (

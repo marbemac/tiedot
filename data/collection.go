@@ -10,7 +10,7 @@ package data
 import (
 	"encoding/binary"
 
-	"github.com/HouzuoGuo/tiedot/dberr"
+	"github.com/marbemac/tiedot/dberr"
 )
 
 const (

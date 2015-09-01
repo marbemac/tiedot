@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/HouzuoGuo/tiedot/db"
-	"github.com/HouzuoGuo/tiedot/dberr"
+	"github.com/marbemac/tiedot/db"
+	"github.com/marbemac/tiedot/dberr"
 )
 
 func sameMap(m1 map[string]interface{}, m2 map[string]interface{}) bool {

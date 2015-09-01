@@ -10,7 +10,7 @@ You will need:
 
     mkdir tiedot && cd tiedot
     export GOPATH=`pwd`  # backticks surround pwd
-    go get github.com/HouzuoGuo/tiedot
+    go get github.com/marbemac/tiedot
 
     ./bin/tiedot -mode=httpd -dir=/tmp/MyDatabase -port=8080
 
@@ -64,7 +64,7 @@ Delete document:
 
 ## Manage indexes
 
-Index is required by all lookup queries. 
+Index is required by all lookup queries.
 
 For an example: Put an index on `a,b,c` will help queries finding documents such as `{"a": {"b": {"c": 1}}}`.
 
@@ -107,7 +107,7 @@ Looking for all but not feeds from "golang.org":
     > curl --data-ascii q='{"c": [{"eq": "golang.org", "in": ["Source"]}, "all"]}' "http://localhost:8080/query?col=Feeds"
     {"4530407170288349686":{"Age":1,"Source":"slackware.com","Title":"Slackware Beta"},"8835531386221862775":{"Age":2,"Source":"android.com","Title":"Kitkat is here"}}
 
-Note that: `"all"` means "all documents"; `{"c": [ .. ]}` means "complement". 
+Note that: `"all"` means "all documents"; `{"c": [ .. ]}` means "complement".
 
 Looking for young feeds (age between 1 and 3) from "slackware.com":
 
