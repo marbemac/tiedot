@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/marbemac/tiedot/db"
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/db"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 var (

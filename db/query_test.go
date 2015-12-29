@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/marbemac/tiedot/dberr"
+	"github.com/stoplightio/tiedot/dberr"
 )
 
 func ensureMapHasKeys(m map[int]struct{}, keys ...int) bool {

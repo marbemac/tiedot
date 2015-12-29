@@ -8,8 +8,8 @@ package data
 import (
 	"sync"
 
-	"github.com/marbemac/tiedot/dberr"
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/dberr"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 // Partition associates a hash table with collection documents, allowing addressing of a document using an unchanging ID.

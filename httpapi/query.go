@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/marbemac/tiedot/db"
+	"github.com/stoplightio/tiedot/db"
 )
 
 // Execute a query and return documents from the result.

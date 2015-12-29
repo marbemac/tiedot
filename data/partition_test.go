@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/marbemac/tiedot/dberr"
+	"github.com/stoplightio/tiedot/dberr"
 )
 
 func TestPartitionDocCRUD(t *testing.T) {

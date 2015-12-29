@@ -4,8 +4,8 @@ package data
 import (
 	"os"
 
-	"github.com/marbemac/tiedot/gommap"
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/gommap"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 // Data file keeps track of the amount of total and used space.

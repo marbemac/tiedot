@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/marbemac/tiedot/db"
+	"github.com/stoplightio/tiedot/db"
 )
 
 var benchTestSize = 100000

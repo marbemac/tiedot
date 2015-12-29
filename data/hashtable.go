@@ -11,7 +11,7 @@ import (
 	"encoding/binary"
 	"sync"
 
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 const (

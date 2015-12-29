@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 const (
@@ -116,7 +116,7 @@ func (db *DB) AllCols() (ret []string) {
 	db.schemaLock.RLock()
 	defer db.schemaLock.RUnlock()
 	ret = make([]string, 0, len(db.cols))
-	for name, _ := range db.cols {
+	for name := range db.cols {
 		ret = append(ret, name)
 	}
 	return

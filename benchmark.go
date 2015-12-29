@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/marbemac/tiedot/db"
+	"github.com/stoplightio/tiedot/db"
 )
 
 // Whether to clean up (delete benchmark DB) after benchmark

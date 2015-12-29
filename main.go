@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/marbemac/tiedot/httpapi"
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/httpapi"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 // Read Linux system VM parameters and print performance configuration advice when necessary.
@@ -115,7 +115,7 @@ func main() {
 		c := make(chan os.Signal, 1)
 		signal.Notify(c, os.Interrupt)
 		go func() {
-			for _ = range c {
+			for range c {
 				pprof.Lookup("goroutine").WriteTo(os.Stderr, 1)
 			}
 		}()

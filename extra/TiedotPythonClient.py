@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Python module to connect to golang tiedot database
-https://github.com/marbemac/tiedot
+https://github.com/stoplightio/tiedot
 http://golang.org/
 
 Depends on python request library: http://requests.readthedocs.org/en/latest/

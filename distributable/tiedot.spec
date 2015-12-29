@@ -3,7 +3,7 @@ Version:        3.2
 Release:        1%{?dist}
 License:        BSD-2-Clause
 Summary:        A NoSQL document database engine powered by Go
-# tiedot is developed at https://github.com/marbemac/tiedot
+# tiedot is developed at https://github.com/stoplightio/tiedot
 # however the distributable source archive is located at https://github.com/tiedot/tiedot
 Url:            https://github.com/HouzuoGuo/%{name}
 Source:         %{name}-%{version}.tar.gz

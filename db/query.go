@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/marbemac/tiedot/dberr"
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/dberr"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 // Calculate union of sub-query results.
@@ -145,7 +145,7 @@ func Intersect(subExprs interface{}, src *Col, result *map[int]struct{}) (err er
 				myResult = subResult
 				first = false
 			} else {
-				for k, _ := range subResult {
+				for k := range subResult {
 					if _, inBoth := myResult[k]; inBoth {
 						intersection[k] = struct{}{}
 					}
@@ -172,12 +172,12 @@ func Complement(subExprs interface{}, src *Col, result *map[int]struct{}) (err e
 			if err = evalQuery(subExpr, src, &subResult, false); err != nil {
 				return
 			}
-			for k, _ := range subResult {
+			for k := range subResult {
 				if _, inBoth := myResult[k]; !inBoth {
 					complement[k] = struct{}{}
 				}
 			}
-			for k, _ := range myResult {
+			for k := range myResult {
 				if _, inBoth := subResult[k]; !inBoth {
 					complement[k] = struct{}{}
 				}

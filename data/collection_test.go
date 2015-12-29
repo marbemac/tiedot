@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/marbemac/tiedot/dberr"
+	"github.com/stoplightio/tiedot/dberr"
 )
 
 func TestInsertRead(t *testing.T) {

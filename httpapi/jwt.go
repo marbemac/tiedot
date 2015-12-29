@@ -40,8 +40,8 @@ import (
 	"time"
 
 	jwt "github.com/dgrijalva/jwt-go"
-	"github.com/marbemac/tiedot/db"
-	"github.com/marbemac/tiedot/tdlog"
+	"github.com/stoplightio/tiedot/db"
+	"github.com/stoplightio/tiedot/tdlog"
 )
 
 var (
@@ -137,7 +137,7 @@ func getJWT(w http.ResponseWriter, r *http.Request) {
 	}
 	// Verify password
 	pass := r.FormValue(JWT_PASS_ATTR)
-	for recID, _ := range userQueryResult {
+	for recID := range userQueryResult {
 		rec, err := jwtCol.Read(recID)
 		if err != nil {
 			break

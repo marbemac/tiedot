@@ -10,7 +10,7 @@ package data
 import (
 	"encoding/binary"
 
-	"github.com/marbemac/tiedot/dberr"
+	"github.com/stoplightio/tiedot/dberr"
 )
 
 const (
